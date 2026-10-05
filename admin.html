@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Admin Dashboard | Jaboscone Limited Kenya</title>
+<meta name="description" content="Jaboscone Limited Kenya — cleaning services and cleaning products platform.">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">J</span>
+      <span>Jaboscone<small>Cleaning • Products • Care</small></span>
+    </a>
+    <nav class="nav-links">
+      <a class="" href="index.html">Home</a>
+      <a class="" href="services.html">Services</a>
+      <a class="" href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-secondary btn-sm" href="cart.html">🛒 Cart <span data-cart-count>0</span></a>
+      <a class="btn btn-primary btn-sm" href="booking.html">Book a Service</a>
+      <button class="menu-btn" aria-label="Open navigation">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="login.html">Customer Login</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-title"><div class="container"><h1>Admin Dashboard</h1><p>Frontend foundation for managing bookings, services, products, customers, payments and reports.</p></div></section>
+<section class="section"><div class="container">
+  <div class="stats-grid">
+    <div class="card stat-card"><span>Bookings today</span><strong>12</strong></div>
+    <div class="card stat-card"><span>Pending requests</span><strong>4</strong></div>
+    <div class="card stat-card"><span>Orders</span><strong>9</strong></div>
+    <div class="card stat-card"><span>Revenue</span><strong>KES 84K</strong></div>
+  </div>
+  <div class="dashboard-grid" style="margin-top:20px">
+    <aside class="card sidebar">
+      <a class="side-link active" href="admin.html">📊 Overview</a>
+      <a class="side-link" href="#">📅 Booking calendar</a>
+      <a class="side-link" href="#">🧹 Services</a>
+      <a class="side-link" href="#">🛍️ Products</a>
+      <a class="side-link" href="#">👥 Customers</a>
+      <a class="side-link" href="#">💳 Payments</a>
+      <a class="side-link" href="#">📈 Reports</a>
+      <a class="side-link" href="#">⚙️ Settings</a>
+    </aside>
+    <div class="card card-pad">
+      <div class="section-head" style="margin-bottom:14px"><div><h2 style="font-size:22px">Recent bookings</h2><p>Approve, reschedule, assign or cancel bookings from the production dashboard.</p></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Ref</th><th>Customer</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td><strong>JAB-2026-1042</strong></td><td>Mary W.</td><td>Residential Cleaning</td><td>09 Oct 2026</td><td><span class="badge badge-green">Confirmed</span></td><td><button class="btn btn-outline btn-sm" onclick="alert('Booking details panel placeholder')">View</button></td></tr>
+        <tr><td><strong>JAB-2026-1041</strong></td><td>Brian K.</td><td>Deep Cleaning</td><td>08 Oct 2026</td><td><span class="badge badge-yellow">Pending</span></td><td><button class="btn btn-primary btn-sm" onclick="alert('Approval action placeholder')">Review</button></td></tr>
+        <tr><td><strong>JAB-2026-1038</strong></td><td>Coastal Offices</td><td>Office Cleaning</td><td>07 Oct 2026</td><td><span class="badge badge-green">Assigned</span></td><td><button class="btn btn-outline btn-sm">View</button></td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:#fff">Jaboscone Limited Kenya</div>
+      <p>Professional cleaning services and quality cleaning products, brought together in one platform.</p>
+      <div style="margin-top:12px"><a href="booking.html" class="btn btn-primary btn-sm">Book a Service</a></div>
+    </div>
+    <div><h4>Explore</h4><div class="footer-links"><a href="services.html">Services</a><a href="products.html">Products</a><a href="about.html">About Us</a><a href="faq.html">FAQ</a></div></div>
+    <div><h4>Customer</h4><div class="footer-links"><a href="login.html">Login / Register</a><a href="dashboard.html">My Dashboard</a><a href="cart.html">Cart</a><a href="contact.html">Contact</a></div></div>
+    <div><h4>Contact</h4><div class="footer-links"><span>Kenya</span><span>Phone: +254 7XX XXX XXX</span><span>Email: info@jaboscone.co.ke</span></div></div>
+  </div>
+  <div class="container footer-bottom">© 2026 Jaboscone Limited Kenya. Frontend prototype built for the development phase.</div>
+</footer>
+<div id="toast" class="toast"></div>
+
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
