@@ -5,24 +5,14 @@
 <meta name="description" content="Jaboscone Limited Kenya — cleaning services and cleaning products platform.">
 <link rel="stylesheet" href="css/style.css">
 </head><body>
-<header class="site-header">
+  <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html">
       <span class="brand-mark">J</span>
       <span>Jaboscone<small>Cleaning • Products • Care</small></span>
     </a>
-    <nav class="nav-links">
-      <a class="" href="index.html">Home</a>
-      <a class="" href="services.html">Services</a>
-      <a class="" href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-secondary btn-sm" href="cart.html">🛒 Cart <span data-cart-count>0</span></a>
-      <a class="btn btn-primary btn-sm" href="booking.html">Book a Service</a>
-      <button class="menu-btn" aria-label="Open navigation">☰</button>
-    </div>
+   
+ 
   </div>
   <nav class="mobile-nav">
     <a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a><a href="login.html">Customer Login</a>
@@ -33,11 +23,11 @@
 <section class="page-title"><div class="container"><h1>Customer Login</h1><p>Sign in to manage bookings, orders, saved addresses and notifications.</p></div></section>
 <section class="section"><div class="container"><div class="card form-card card-pad" style="max-width:520px">
   <form onsubmit="event.preventDefault(); localStorage.setItem('jaboscone_demo_user','1'); location.href='dashboard.html';">
-    <div class="field"><label>Email</label><input type="email" required placeholder="you@example.com"></div>
-    <div class="field" style="margin-top:14px"><label>Password</label><input type="password" required placeholder="••••••••"></div>
+    <div class="field"><label>Email</label><input type="email" required placeholder="jaboscone@example.com"></div>
+    <div class="field" style="margin-top:14px"><label>Password</label><input type="password" required placeholder="•••••••"></div>
     <button class="btn btn-primary" style="width:100%;margin-top:18px">Login</button>
   </form>
-  <div style="text-align:center;color:var(--muted);font-size:13px;margin:16px 0">No account yet? <a href="#" onclick="alert('Registration form will be wired to the backend.');return false;" style="color:var(--primary);font-weight:700">Create one</a></div>
+  <div style="text-align:center;color:var(--muted);font-size:13px;margin:16px 0">No account? <a href="adminlogin.html"  style="color:var(--primary);font-weight:700">Admin </a> | <a href="#" onclick="alert('Registration form will be wired to the backend.');return false;" style="color:var(--primary);font-weight:700">Create Account</a></div>
 </div></div></section>
 </main>
 
@@ -46,10 +36,10 @@
     <div>
       <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:#fff">Jaboscone Limited Kenya</div>
       <p>Professional cleaning services and quality cleaning products, brought together in one platform.</p>
-      <div style="margin-top:12px"><a href="booking.html" class="btn btn-primary btn-sm">Book a Service</a></div>
+      <div style="margin-top:12px"><a href="login.html" class="btn btn-primary btn-sm">Book a Service</a></div>
     </div>
-    <div><h4>Explore</h4><div class="footer-links"><a href="services.html">Services</a><a href="products.html">Products</a><a href="about.html">About Us</a><a href="faq.html">FAQ</a></div></div>
-    <div><h4>Customer</h4><div class="footer-links"><a href="login.html">Login / Register</a><a href="dashboard.html">My Dashboard</a><a href="cart.html">Cart</a><a href="contact.html">Contact</a></div></div>
+    <div><h4>Explore</h4><div class="footer-links"><a href="about.html">About Us</a><a href="faq.html">FAQ</a></div></div>
+    <div><h4>Customer</h4><div class="footer-links"><a href="login.html">Login / Register</a><a href="login.html">My Dashboard</a><a href="login.html">Cart</a><a href="login.html">Contact</a></div></div>
     <div><h4>Contact</h4><div class="footer-links"><span>Kenya</span><span>Phone: +254 7XX XXX XXX</span><span>Email: info@jaboscone.co.ke</span></div></div>
   </div>
   <div class="container footer-bottom">© 2026 Jaboscone Limited Kenya. Frontend prototype built for the development phase.</div>
