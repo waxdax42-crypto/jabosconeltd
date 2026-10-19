@@ -59,7 +59,7 @@
     if(!grid) return;
     grid.innerHTML = JABOSCONE.products.map(p=>`
       <article class="card product-card" data-product-card>
-        <div class="product-image"><span>${p.icon}</span></div>
+        <div class="product-image"><span>${p.icon ? `<img src="${p.icon}" alt="${p.name} icon">` : ""}</span></div>
         <div class="product-body">
           <div class="badge badge-green">${p.category}</div>
           <h3>${p.name}</h3>
@@ -78,7 +78,9 @@
     if(!grid) return;
     grid.innerHTML = JABOSCONE.services.map(s=>`
       <article class="card service-card">
-        <div class="icon-box">${s.icon}</div>
+        <div class="icon-box">   
+		   ${s.icon ? `<img src="${s.icon}" alt="${s.name} icon">` : ""}
+		 </div>
         <div class="badge badge-green" style="align-self:flex-start">${s.category}</div>
         <h3 style="margin-top:12px">${s.name}</h3>
         <p>${s.desc}</p>
@@ -98,7 +100,7 @@
     if(!grid) return;
     grid.innerHTML = JABOSCONE.services.slice(0,6).map(s=>`
       <article class="card service-card">
-        <div class="icon-box">${s.icon}</div>
+        <div class="icon-box">  ${s.icon ? `<img src="${s.icon}" alt="${s.name} icon">` : ""}</div>
         <h3>${s.name}</h3>
         <p>${s.desc}</p>
         <div class="bottom">
@@ -162,7 +164,7 @@
       if(!p) return "";
       const line=p.price*item.qty; total+=line;
       return `<div class="cart-row">
-        <div class="cart-product"><div class="thumb">${p.icon}</div><div><strong>${p.name}</strong><div style="font-size:11px;color:#7a8a83">${p.unit}</div></div></div>
+        <div class="cart-product"><div class="thumb">${p.icon ? `<img src="${p.icon}" alt="${p.name} icon">` : ""}</div><div><strong>${p.name}</strong><div style="font-size:11px;color:#7a8a83">${p.unit}</div></div></div>
         <div style="display:flex;align-items:center;gap:7px"><button class="qty-btn" data-minus="${idx}">−</button><strong>${item.qty}</strong><button class="qty-btn" data-plus="${idx}">+</button></div>
         <div class="cart-price"><strong>${money(line)}</strong></div>
         <button class="btn btn-danger btn-sm cart-action" data-remove="${idx}">Remove</button>
